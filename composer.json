@@ -1,0 +1,29 @@
+{
+  "name": "kaadon/think-mailer",
+  "type": "library",
+  "description": "kaadon Mailer for PHP",
+  "authors": [
+    {
+      "name": "kaadon",
+      "email": "kaadon@foxmail.com",
+      "homepage": "https://www.kaadon.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "require": {
+    "topthink/framework": "^6.0.0",
+    "phpmailer/phpmailer": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kaadon\\ThinkMailer\\": "src/"
+    }
+  },
+  "extra": {
+    "think": {
+      "config":{
+        "captcha": "src/config.php"
+      }
+    }
+  }
+}
